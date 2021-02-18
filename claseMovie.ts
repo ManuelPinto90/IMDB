@@ -2,11 +2,11 @@ import { Professional } from "./claseProfessional"
 
 export class Movie{
     //Atributos
-    // public title: string;
-    // public releaseYear: number;
+    public title: string;
+    public releaseYear: number;
 
     public actors: Professional[];
-    // public nationality: string;
+    public nationality: string;
     public director: Professional;
     public writer: Professional;
     public language: string;
@@ -15,7 +15,7 @@ export class Movie{
     public mainCharacterName: string;
     public producer: string;
     public distributor: string;
-    // public genre: string
+    public genre: string
 
     //Constructor
     constructor(title: string, releaseYear: number, nacionality: string, genre: string){
