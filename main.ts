@@ -127,3 +127,19 @@ console.log(videoclub)
 
 console.log(videoclub.peliculas[3].language)
 console.log(videoclub.peliculas[0].director.showProfessional())
+
+
+// json
+let fs = require('fs')
+let videoclubJson = JSON.stringify(videoclub)
+
+
+fs.writeFileSync('imdbBBDD.json', videoclubJson)
+
+let ficheroJson = fs.readFileSync('imdbBBDD.json','utf-8')
+console.log(ficheroJson)
+
+let input = JSON.parse(ficheroJson).peliculas 
+
+let nuevaImdb : IMDB = new IMDB (input)
+console.log(nuevaImdb)
