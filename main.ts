@@ -115,12 +115,12 @@ perfectosDesconocidos.mainCharacterName = "Los moviles"
 perfectosDesconocidos.producer = "Telecinco Cinema"
 perfectosDesconocidos.distributor = "Universal Pictures"
 
-//pruebas clases
+// Pruebas metodos clases Movie y Professional
 
 console.log(diCaprio.showProfessional())
 console.log(perfectosDesconocidos.showMovie())
 
-// crear clase imdb
+// Creación clase IMDB
 
 let videoclub : IMDB = new IMDB([starwarsIV, mientrasDureLaGuerra, civilWar, avengersEndgame, theWarriors, guardiansOfTheGalaxy,perfectosDesconocidos])
 console.log(videoclub)
@@ -129,7 +129,7 @@ console.log(videoclub.peliculas[3].language)
 console.log(videoclub.peliculas[0].director.showProfessional())
 
 
-// json
+// Parte avanzada. Conversion a JSON
 let fs = require('fs')
 let videoclubJson = JSON.stringify(videoclub)
 
