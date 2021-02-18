@@ -1,3 +1,5 @@
+import { Professional } from "./claseProfessional"
+
 export class Movie{
     //Atributos
     public title: string;
