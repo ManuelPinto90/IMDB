@@ -1,6 +1,7 @@
 //Archivo principal codigo
 import {Professional}from"./claseProfessional"
 import { Movie } from "./claseMovie";
+import {IMDB} from "./claseIMDB";
 
 //Profesionales
 let diCaprio : Professional = new Professional("Leonardo di Caprio",48,"Male",80,1.82,"Blondy", "Blue", "Aria", false, "Yankee",12,"Actor")
@@ -15,7 +16,7 @@ let alejandroAmenabarD: Professional = new Professional("Alejandro Amenabar", 48
 let alejandroAmenabarW: Professional = new Professional("Alejandro Amenabar", 48, "male", 64, 174, "black", "black", "caucasian", false, "Spanish", 1, "Writer")
 let chrisEvans: Professional = new Professional("Chris Evans", 39, "male", 90, 184, "brown", "green", "caucasian", false, "US citizen", 0, "Actor")
 let robertDowneyJr: Professional = new Professional("Robert Downey Jr", 55, "male", 86, 179, "brown", "brown", "caucasian", false, "US citizen", 0, "Actor")
-let scarlettJohansson: Professional = new Professional("Scarlett Johansson", 36, "female", 68, 165, "blonde", "brown", "caucasian", false, "US citizen", 0, "Actress")
+let scarlettJohansson: Professional = new Professional("Scarlett Johansson", 36, "female", 68, 165, "blond", "brown", "caucasian", false, "US citizen", 0, "Actress")
 let tomHolland: Professional = new Professional("Tom Holland", 24, "male", 80,180, "brown", "brown", "caucasian", false, "English", 0, "Actor")
 let russoBrothers: Professional = new Professional("Anthony Russo & Joe Russo", 100, "male", 180, 180, "grey", "black", "caucasian", false, "US citizen", 0, "Director")
 let stephenMcFeely: Professional = new Professional("Stephen McFeely", 51, "male", 67, 162, "red", "blue", "caucasian", false, "English", 0 , "Writer")
@@ -26,8 +27,8 @@ let davidShaber : Professional = new Professional("David Shaber", 70, "Male", 70
 let chrisPratt : Professional = new Professional("Chris Pratt", 41, "Male", 90, 191, "Blondy", "Green", "Nordic", false, "US citizen", 0, "Actor")
 let zoeSaldanya : Professional = new Professional("Zoe Yadira Saldanya Nazario", 42, "Female", 54, 170, "Black", "Brown", "Black", false, "US citizen", 0, "Actress")
 let jamesGunn : Professional = new Professional("James Gunn", 54, "male", 69, 170, "Brown", "Green", "caucasian", false, "US citizen", 0 , "Director")
-let nicolePerlman : Professional = new Professional("Nicole Perlman", 39, "Female", 60, 165, "Blondie", "Green", "caucasian", false , "Us citizen", 0, "Writer")
-let belenRueda : Professional = new Professional("Maria Belen Rueda Garcia-Porrero", 55 , "Female", 56, 168, "Blondie", "Green", "caucasian", false , "Spanish", 0, "Actress")
+let nicolePerlman : Professional = new Professional("Nicole Perlman", 39, "Female", 60, 165, "Blond", "Green", "caucasian", false , "Us citizen", 0, "Writer")
+let belenRueda : Professional = new Professional("Maria Belen Rueda Garcia-Porrero", 55 , "Female", 56, 168, "Blond", "Green", "caucasian", false , "Spanish", 0, "Actress")
 let ernestoAlterio : Professional = new Professional("Ernesto Federico Alterio Bacaicoa", 50, "Male", 68, 177, "Hoary", "Green", "caucasian", false, "Argentinian", 0, "Actor")
 let alexDeLaIglesia : Professional = new Professional("Alejandro de La Iglesia Mendoza", 55, "Male", 90, 171, "Hoary", "Black", "caucasian", false , "Spanish", 0, "Director")
 let jorgeGuerricaechevarría : Professional = new Professional("Jorge Guerricaechevarría", 56, "Male", 75, 175, "Bald", "Green", "caucasian", false, "Spanish", 0 , "Writer")
@@ -44,7 +45,6 @@ starwarsIV.isMCU = false
 starwarsIV.mainCharacterName = "Luke Skywalker"
 starwarsIV.producer = "Lucas Arts"
 starwarsIV.distributor = "Lucas Films"
-console.log(starwarsIV.showMovie());
 
 let mientrasDureLaGuerra: Movie = new Movie("Mientras dure la guerra", 2019, "Spanish", "Drama")
 mientrasDureLaGuerra.actors = [karraElejalde, eduardFernandez]
@@ -56,7 +56,6 @@ mientrasDureLaGuerra.isMCU = false
 mientrasDureLaGuerra.mainCharacterName = "Miguel de Unamuno"
 mientrasDureLaGuerra.producer = "Movistar+"
 mientrasDureLaGuerra.distributor = "Buanavistacine"
-console.log(mientrasDureLaGuerra.showMovie())
 
 let civilWar: Movie = new Movie("Captain America: Civil War", 2016, "EEUU", "Action")
 civilWar.actors = [chrisEvans, robertDowneyJr, scarlettJohansson, tomHolland]
@@ -68,7 +67,6 @@ civilWar.isMCU = true
 civilWar.mainCharacterName = "Captain America"
 civilWar.producer = "Marvel Studios"
 civilWar.distributor = "Walt Disney Studios"
-console.log(civilWar.showMovie())
 
 let avengersEndgame: Movie = new Movie("Avengers: Endgame", 2019, "EEUU", "Action")
 avengersEndgame.actors = [chrisPratt, chrisEvans, robertDowneyJr, scarlettJohansson, tomHolland]
@@ -80,7 +78,6 @@ avengersEndgame.isMCU = true
 avengersEndgame.mainCharacterName = "Thanos"
 avengersEndgame.producer = "Marvel Studios"
 avengersEndgame.distributor = "Walt Disney Studios"
-console.log(avengersEndgame.showMovie())
 
 let theWarriors : Movie = new Movie("The Warriors", 1979, "EE.UU.", "Action")
 theWarriors.actors = []
@@ -117,3 +114,16 @@ perfectosDesconocidos.isMCU = false
 perfectosDesconocidos.mainCharacterName = "Los moviles"
 perfectosDesconocidos.producer = "Telecinco Cinema"
 perfectosDesconocidos.distributor = "Universal Pictures"
+
+//pruebas clases
+
+console.log(diCaprio.showProfessional())
+console.log(perfectosDesconocidos.showMovie())
+
+// crear clase imdb
+
+let videoclub : IMDB = new IMDB([starwarsIV, mientrasDureLaGuerra, civilWar, avengersEndgame, theWarriors, guardiansOfTheGalaxy,perfectosDesconocidos])
+console.log(videoclub)
+
+console.log(videoclub.peliculas[3].language)
+console.log(videoclub.peliculas[0].director.showProfessional())
