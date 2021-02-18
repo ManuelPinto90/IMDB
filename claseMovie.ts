@@ -26,6 +26,18 @@ export class Movie{
 
     //Metodo público
     public showMovie():string{
-        return ` Title : ${this.title}\n Release Year :  ${this.releaseYear}\n Actors : ${this.actors}\n Nacionality : ${this.nationality}\n Director : ${this.director}\n Writer : ${this.writer}\n Language : ${this.language}\n Platform : ${this.platform}\n isMCU : ${this.isMCU}\n Main Character Name : ${this.mainCharacterName}\n Producer : ${this.producer}\n Distributor : ${this.distributor}\n Genre : ${this.genre}`
+        return "Title : " +this.title +"\n"
+        +"Release Year : " +this.releaseYear +"\n"
+        +"Actors : " +this.actors +"\n"
+        +"Nacionality : " +this.nationality +"\n"
+        +"Director : " +this.director +"\n"
+        +"Writer : " +this.writer +"\n"
+        +"Language : " +this.language +"\n"
+        +"Platform : " +this.platform +"\n"
+        +"isMCU : " +this.isMCU +"\n"
+        +"Main Character Name : " +this.mainCharacterName +"\n"
+        +"Producer : " +this.producer +"\n"
+        +"Distributor : " +this.distributor +"\n"
+        +"Genre : " +this.genre +"\n"
     }
 }
