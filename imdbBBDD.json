@@ -573,6 +573,76 @@
             "mainCharacterName": "Los moviles",
             "producer": "Telecinco Cinema",
             "distributor": "Universal Pictures"
+        },
+        {
+            "title": "The Warriors",
+            "releaseYear": 1979,
+            "nationality": "EE.UU.",
+            "genre": "Action",
+            "actors": [
+                {
+                    "name": "Michael Beck",
+                    "age": 72,
+                    "genre": "Male",
+                    "weight": 84,
+                    "height": 186,
+                    "hairColor": "Brown",
+                    "eyeColor": "Brown",
+                    "race": "caucasian",
+                    "isRetired": true,
+                    "nationality": "US citizen",
+                    "oscarNumber": 0,
+                    "profession": "Actor"
+                },
+                {
+                    "name": "David Harris",
+                    "age": 61,
+                    "genre": "Male",
+                    "weight": 76,
+                    "height": 178,
+                    "hairColor": "Bald",
+                    "eyeColor": "Brown",
+                    "race": "Black",
+                    "isRetired": false,
+                    "nationality": "US citizen",
+                    "oscarNumber": 0,
+                    "profession": "Actor"
+                }
+            ],
+            "director": {
+                "name": "Walter Hill",
+                "age": 79,
+                "genre": "Male",
+                "weight": 80,
+                "height": 172,
+                "hairColor": "White",
+                "eyeColor": "Green",
+                "race": "caucasian",
+                "isRetired": true,
+                "nationality": "US citizen",
+                "oscarNumber": 0,
+                "profession": "Director"
+            },
+            "writer": {
+                "name": "David Shaber",
+                "age": 70,
+                "genre": "Male",
+                "weight": 70,
+                "height": 175,
+                "hairColor": "Brown",
+                "eyeColor": "Brown",
+                "race": "caucasian",
+                "isRetired": true,
+                "nationality": "US citizen",
+                "oscarNumber": 0,
+                "profession": "Writer"
+            },
+            "language": "English",
+            "platform": "Movistar",
+            "isMCU": false,
+            "mainCharacterName": "Ajax",
+            "producer": "Paramount Pictures",
+            "distributor": "Paramount Pictures"
         }
     ]
 }
